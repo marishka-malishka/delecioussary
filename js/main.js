@@ -5,7 +5,7 @@
 (function() {
 
     var $window = $(window),
-        flexslider;
+        flexslider = { vars:{} };
 
     function getGridSize() {
         return (window.innerWidth < 500) ? 2 :  (window.innerWidth < 700) ? 3 :  (window.innerWidth < 900) ? 5 : 6;
