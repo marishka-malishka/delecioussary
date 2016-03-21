@@ -205,18 +205,25 @@ header .header-bg{
 .menu-toggle{
     display: none;
     float: right;
-    margin-top: 0px;
-    margin-right: 15px;
+    margin-top: 3px;
+    margin-right: 7px;
     background: none;
-    border: 1px solid #765028;
+    border: none;
     border-radius: 7px;
 }
 
 .menu-toggle:before{
     padding: 0 5px;
     content: "\2261";
-    color: #765028;
+    color: #c98c15;
     font: 26px "arial";
+}
+
+.menu-toggle:focus,
+.menu-toggle:active,
+.menu-toggle:active:before{
+    background: none;
+    outline: none;
 }
 
 .menu-wraper{
@@ -576,6 +583,7 @@ article p{
 
 .new-price{
     display: inline-block;
+    margin-right: 20px;
     color: #be4c7d;
     font-size: 24px;
     font-weight: bold;
@@ -584,7 +592,6 @@ article p{
 }
 
 .add-cart-border{
-    margin: 0 20px;
     display: inline-block;
     padding: 1px;
     background: linear-gradient(#e5e5e5, #acacac);
@@ -613,6 +620,10 @@ article p{
     content: url("../images/cart-icon.png");
 }
 
+.add-cart:hover{
+    background: #ffffff;
+}
+
 /* Slider show */
 .ingridient-decr{
     padding-left: 10%;
@@ -627,10 +638,10 @@ article p{
 
 #ingridient-slider .flex-viewport:after{
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 0px;
     z-index: 10;
-    margin-top: -30px;
+    margin-top: -33px;
     /*margin-right: 4px;*/
     width: 4px;
     height: 60px;
@@ -642,10 +653,10 @@ article p{
 
 #ingridient-slider .flex-viewport:before{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 0px;
     z-index: 10;
-    margin-top: -30px;
+    margin-top: -33px;
     /*margin-left: 4px;*/
     width: 4px;
     height: 60px;
@@ -668,6 +679,7 @@ article p{
 }
 
 #ingridient-slider .flex-direction-nav a{
+    top: 35%;
     margin: -16px 0 0;
     width:14px;
     height: 26px;
@@ -775,6 +787,10 @@ article p{
     font-size: 9px;
 }
 
+.newsletter-form button:hover{
+    background: #562429;
+}
+
 .page-shadow{
     position: relative;
     z-index: 2;
@@ -828,7 +844,10 @@ footer .social-icon div{
     padding: 0 6px;
     color: #7e562b;
     font-size: 17px;
+}
 
+footer .social-icon div:hover{
+    color: #b7926c;
 }
 
 /** Media styles **/
@@ -903,15 +922,24 @@ footer .social-icon div{
     }
 
     .column-2.ingridient-decr{
-        padding-left: 10px;
+        padding-left: 5px;
+    }
+
+    .home-banner-bg{
+        padding-top:15px;
+    }
+
+    .carousel-wrapper,
+    .addit-info{
+        padding-top: 20px;
     }
 
     .one-testimonial{
         margin-bottom: 20px;
     }
 
-    .footer{
-        padding: 30px 5px;
+    footer{
+        padding: 30px 5px 20px 5px;
     }
 
     footer .float-left,
